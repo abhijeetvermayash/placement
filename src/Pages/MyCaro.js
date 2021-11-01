@@ -9,7 +9,7 @@ import "./mycaro.css";
 class MyCaro extends Component {
   render() {
     return (
-      <div disabled className="Caro">
+      <div className="Caro">
         <Carousel
           infiniteLoop
           autoPlay
