@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .caro {
+    margin-top: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .slick .slide img {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .slick .slide img {
+    width: auto;
+  }
+}
+.slick {
+  display: flex;
+  justify-content: center;
+}
+
+.slick .slide img {
+  height: 700px;
+}
+.image {
+  height: 700px;
+}

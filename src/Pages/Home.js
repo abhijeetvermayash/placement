@@ -14,6 +14,7 @@ import MyTable from "./MyTable";
 import Table2 from "./Table2";
 import Img from "../images/one.jpg";
 import MyCaro2 from "./MyCaro2";
+import Move from "./Move";
 
 function App() {
   const videoSource =
@@ -77,9 +78,12 @@ function App() {
       <div style={{ height: 100, backgroundColor: "white" }}></div>
       <div id={"placementprocess"} style={{ backgroundColor: "white" }}></div> */}
       {/* <hr /> */}
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
       {/* carousel */}
+      {/* <Move /> */}
+      {/* <br />
+      <br /> */}
       <MyCaro />
       {/* carousel ends /////////////////////// */}
       <br />

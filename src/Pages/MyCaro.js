@@ -13,7 +13,7 @@ class MyCaro extends Component {
         <Carousel
           infiniteLoop
           autoPlay
-          swipeable={false}
+          preventMovementUntilSwipeScrollTolerance
           swipeScrollTolerance={100}
         >
           <div className="image">
