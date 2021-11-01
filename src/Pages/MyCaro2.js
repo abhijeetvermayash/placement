@@ -9,12 +9,13 @@ import "./mycaro.css";
 class MyCaro2 extends Component {
   render() {
     return (
-      <div className="Caro">
+      <div disabled className="Caro">
         <Carousel
           infiniteLoop
           autoPlay
           preventMovementUntilSwipeScrollTolerance
-          swipeScrollTolerance={100}
+          swipeScrollTolerance={30}
+          swipeable={false}
         >
           <div className="image">
             <img src={image1} />
