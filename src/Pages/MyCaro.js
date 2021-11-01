@@ -10,7 +10,7 @@ class MyCaro extends Component {
   render() {
     return (
       <div className="Caro">
-        <Carousel infiniteLoop autoPlay swipeable="false">
+        <Carousel infiniteLoop autoPlay swipeable={false}>
           <div className="image">
             <img src={image1} />
           </div>
