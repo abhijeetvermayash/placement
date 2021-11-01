@@ -13,9 +13,8 @@ class MyCaro extends Component {
         <Carousel
           infiniteLoop
           autoPlay
-          swipeable={"false"}
-          axis={"horizontal"}
-          onSwipeMove
+          swipeable={false}
+          onSwipeMove={(e) => e.preventDefault()}
         >
           <div className="image">
             <img src={image1} />
