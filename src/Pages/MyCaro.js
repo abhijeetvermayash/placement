@@ -14,7 +14,7 @@ class MyCaro extends Component {
           infiniteLoop
           autoPlay
           swipeable={false}
-          onSwipeMove={(e) => e.preventDefault()}
+          swipeScrollTolerance={100}
         >
           <div className="image">
             <img src={image1} />
