@@ -1,0 +1,35 @@
+.card2 {
+  height: auto;
+  color: white;
+  padding: 1rem;
+}
+.cards2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 600px) {
+  .cards2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .cards2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+div.item2 {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+.img2 {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+}
+.caption {
+  display: block;
+}

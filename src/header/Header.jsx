@@ -67,7 +67,14 @@ const Header = () => {
 >OUR RECRUITERS</Link>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
-            <a href="#">FACILITY</a>
+          <Link
+    activeClass="active"
+    to="facility"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+>FACILITY</Link>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
           <Link
@@ -80,10 +87,24 @@ const Header = () => {
 >ALUMNI FEEDBACK</Link>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
-            <a href="#">PLACEMENT TEAM</a>
+          <Link
+    activeClass="active"
+    to="pteam"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+>PLACEMENT TEAM</Link>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
-            <a href="#">CONTACT US</a>
+          <Link
+    activeClass="active"
+    to="footer"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+>CONTACT US</Link>
           </li>
           
          

@@ -16,6 +16,9 @@ import Img from "../images/one.jpg";
 import MyCaro2 from "./MyCaro2";
 import Move from "./Move";
 import Alumni from "./Alumni";
+import Pteam from "./Pteam";
+import Fplac from "./Fplac";
+import Sstaff from "./Sstaff";
 
 function App() {
   const videoSource =
@@ -372,6 +375,41 @@ function App() {
         <Alumni />
       </div>
       <br />
+      <br />
+      <h1>FACILITY</h1>
+      <br />
+      <br />
+      <div id="facility">
+        <Move />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id="pteam"></div>
+      <h1>PLACEMENT TEAM</h1>
+      <br />
+      <br />
+      <div>
+        <Pteam />
+      </div>
+      <br />
+      <br />
+      <h1>Faculty Placement Coordinators</h1>
+      <br />
+      <br />
+      <div id="fpc">
+        <Fplac />
+      </div>
+      <br />
+      <br />
+      <br />
+      <h1>Support Staff</h1>
+      <br />
+      <br />
+      <div id="sst">
+        <Sstaff />
+      </div>
       <br />
     </div>
   );

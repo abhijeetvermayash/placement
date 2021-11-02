@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
 
+.caption {
+  display: block;
+}
 @media (min-width: 600px) {
   .caro {
     margin-top: 300px;
