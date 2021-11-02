@@ -16,6 +16,7 @@ class MyCaro extends Component {
           preventMovementUntilSwipeScrollTolerance
           swipeScrollTolerance={30}
           swipeable={false}
+          stopOnHover={false}
         >
           <div className="image">
             <img src={image1} />

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import image1 from "../images/image1.jpeg";
-import image2 from "../images/image2.jpeg";
-import image3 from "../images/image3.jpeg";
+import image1 from "../images/a1.jpg";
+import image2 from "../images/a2.jpg";
+import image3 from "../images/a3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./move.css";
@@ -48,18 +48,7 @@ export default class Move extends Component {
     };
     return (
       <div>
-        <Slider
-          adaptiveHeight={false}
-          variableWidth={false}
-          centerPadding={0}
-          autoplay
-          centerMode
-          slidesToShow={3}
-          slidesToScroll={1}
-          swipe
-          draggable={false}
-          infinite
-        >
+        <Slider {...settings}>
           <div className="image">
             <img src={image1} />
           </div>

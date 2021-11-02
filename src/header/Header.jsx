@@ -70,7 +70,14 @@ const Header = () => {
             <a href="#">FACILITY</a>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
-            <a href="#">ALUMNI FEEDBACK</a>
+          <Link
+    activeClass="active"
+    to="alumni"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+>ALUMNI FEEDBACK</Link>
           </li>
           <li className="option1" onClick={closeMobileMenu}>
             <a href="#">PLACEMENT TEAM</a>

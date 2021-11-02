@@ -15,6 +15,7 @@ import Table2 from "./Table2";
 import Img from "../images/one.jpg";
 import MyCaro2 from "./MyCaro2";
 import Move from "./Move";
+import Alumni from "./Alumni";
 
 function App() {
   const videoSource =
@@ -362,6 +363,16 @@ function App() {
       <div id="recruiters">
         <MyCaro2 />
       </div>
+      <br />
+      <br />
+      <h1>ALUMNI FEEDBACK</h1>
+      <br />
+      <br />
+      <div id="alumni">
+        <Alumni />
+      </div>
+      <br />
+      <br />
     </div>
   );
 }
