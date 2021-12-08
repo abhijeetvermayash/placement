@@ -60,7 +60,7 @@ function App() {
             />
           </div>
           <div class="column">
-            <Counting start="0" end="600" heading="No of offers" suffix="+" />
+            <Counting start="0" end="750" heading="No of offers" suffix="+" />
           </div>
           <div class="column">
             <Counting
