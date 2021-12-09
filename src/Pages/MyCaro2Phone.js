@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import image1 from "../images/l1.jpg";
-import image2 from "../images/l2.jpg";
-import image3 from "../images/l3.jpg";
+import image2 from "../images/l3.jpg";
+import image3 from "../images/rec2.jpg";
 import "./mycaro.css";
 
-class MyCaro2 extends Component {
+class MyCaro2Phone extends Component {
   render() {
     return (
       <div className="Caro">
@@ -32,4 +32,4 @@ class MyCaro2 extends Component {
     );
   }
 }
-export default MyCaro2;
+export default MyCaro2Phone;

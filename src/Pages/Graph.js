@@ -9,13 +9,13 @@ const data = {
   datasets: [
     {
       label: "Companies Visited",
-      data: [102, 89, 145, 112, 145, 36],
+      data: [102, 89, 145, 112, 145, 56],
       backgroundColor: "rgb(51,85,139)",
       stack: "Stack 0",
     },
     {
       label: "No of offers",
-      data: [561, 561, 662, 595, 608, 575],
+      data: [561, 561, 662, 595, 608, 780],
       backgroundColor: "orange",
       stack: "Stack 1",
     },

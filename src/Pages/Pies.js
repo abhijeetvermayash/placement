@@ -2,42 +2,20 @@ import React from "react";
 import { Pie, Doughnut } from "react-chartjs-2";
 
 const state = {
-  labels: [
-    "CSE",
-    "ISC",
-    "ECE",
-    "ETE",
-    "EIE",
-    "EEE",
-    "IEM",
-    "CIV",
-    "MECH",
-    "MCA",
-    "MBA",
-  ],
+  labels: ["2017", "2018", "2019", "2020", "2021", "2022*"],
   datasets: [
     {
       backgroundColor: [
-        "#800000",
-        "#e6194B",
-        "#f58231",
-        "#ffe119",
-        "#bfef45",
-        "#3cb44b",
-        "#42d4f4",
-        "#911eb4",
-        "#f032e6",
-        "#fabed4",
-        "#aaffc3",
+        "#ACDDDE",
+        "#FFE7C7",
+        "#F7D8BA",
+        "#FFE5D9",
+        "#FFE9EE",
+        "#FFDDE4",
+        "#ACDDDE",
       ],
-      hoverBackgroundColor: [
-        "#501800",
-        "#4B5000",
-        "#175000",
-        "#003350",
-        "#35014F",
-      ],
-      data: [124, 51, 20, 12, 12, 10, 4, 2, 10, 15, 2],
+      hoverBackgroundColor: ["white", "white", "white", "white", "white"],
+      data: [561, 561, 662, 595, 608, 780],
     },
   ],
 };
@@ -62,6 +40,16 @@ export default class Pies extends React.Component {
               legend: {
                 display: true,
                 position: "left",
+              },
+              plugins: {
+                color: "white",
+              },
+              datalabels: {
+                display: true,
+                color: "white",
+              },
+              tooltips: {
+                backgroundColor: "black",
               },
             }}
           />

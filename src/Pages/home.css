@@ -139,7 +139,7 @@
   .sub-content p {
     color: #efefef;
     font-size: 1.3rem;
-    margin: 10px 0 !important;
+    /* margin: 10px 0 !important; */
   }
   .sub-content button {
     font-weight: bold;

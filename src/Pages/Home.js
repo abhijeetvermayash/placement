@@ -19,10 +19,62 @@ import Alumni from "./Alumni";
 import Pteam from "./Pteam";
 import Fplac from "./Fplac";
 import Sstaff from "./Sstaff";
+import Table3 from "./Table3";
+import Pop from "./Pop";
+import { useState } from "react";
+import { useEffect } from "react";
+import popimage from "../images/image24.jpeg";
+import Popfunction from "./Popfunc";
+import MyCaroPhone from "./MyCaroPhone";
+import MyCaro2Phone from "./MyCaro2Phone";
+import MovePhone from "./MovePhone";
 
+// function popfunction() {
+//   const [timedPopup, setTimedPopup] = useState(false);
+//   const mql = window.matchMedia("(max-width: 600px)");
+
+//   let mobileView = mql.matches;
+//   if (!mobileView) {
+//     return (
+//       <>
+//         <Pop trigger={timedPopup} setTrigger={setTimedPopup}>
+//           <img src={popimage} style={{ height: "100%", width: "100%" }} />
+//           {/* <MyCaro /> */}
+//         </Pop>
+//       </>
+//     );
+//   }
+// }
 function App() {
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [timedPopup, setTimedPopup] = useState(false);
+
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  let resizeWindow = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    resizeWindow();
+    window.addEventListener("resize", resizeWindow);
+    return () => window.removeEventListener("resize", resizeWindow);
+  }, []);
+
+  const mql = window.matchMedia("(max-width: 600px)");
+
+  let mobileView = mql.matches;
+
+  console.log(mobileView);
+  useEffect(() => {
+    setTimeout(() => {
+      setTimedPopup(true);
+    }, 5000);
+  }, []);
+
   const videoSource =
-    "https://firebasestorage.googleapis.com/v0/b/homoeomedicare-935f2.appspot.com/o/bit.mp4?alt=media&token=c9940b5d-7444-40eb-bb5d-a1ea3abc39e4";
+    "https://firebasestorage.googleapis.com/v0/b/podcast1-23e84.appspot.com/o/New%20video.mp4?alt=media&token=838e4dba-291c-441b-b060-6372c64489f2";
   const scrollToBottom = () => {
     const bottomEle = document.getElementById("video-id");
     bottomEle.scrollIntoView({ behavior: "smooth" });
@@ -54,18 +106,18 @@ function App() {
           <div class="column">
             <Counting
               start="0"
-              end="315"
+              end="500"
               heading="Placed Students"
               suffix="+"
             />
           </div>
           <div class="column">
-            <Counting start="0" end="750" heading="No of offers" suffix="+" />
+            <Counting start="0" end="780" heading="No of offers" suffix="+" />
           </div>
           <div class="column">
             <Counting
               start="0"
-              end="25"
+              end="24"
               heading="Highest package"
               suffix="LPA"
             />
@@ -88,13 +140,21 @@ function App() {
       {/* <Move /> */}
       {/* <br />
       <br /> */}
-      <MyCaro />
+      {!mobileView && <MyCaro />}
+      {/* console.log(mobileView); */}
+      {mobileView && <MyCaroPhone />}
       {/* carousel ends /////////////////////// */}
       <br />
       <br />
       {/* <hr /> */}
       <br />
       <br />
+      {/* <Popfunction /> */}
+      {!mobileView && (
+        <Pop trigger={timedPopup} setTrigger={setTimedPopup}>
+          <img src={popimage} style={{ height: "100%", width: "100%" }} />
+        </Pop>
+      )}
       {/* Placement Stats */}
       <div id="placementStats">
         <h1>Placement Statistics</h1>
@@ -102,7 +162,7 @@ function App() {
       <br />
       <br />
       <br />
-      <div class="bar">
+      <div style={{ margin: "20px" }} class="bar">
         <Graph />
       </div>
       <div className="pies">
@@ -142,9 +202,12 @@ function App() {
       <br />
       <br />
       {/* <hr /> */}
+      <h1>PLACEMENT 2022 * (STILL GOING ON)</h1>
       <br />
       <br />
-      <MyTable />
+      {/* <MyTable /> */}
+      {!mobileView && <Table3 />}
+      {/* <Table3 /> */}
       <div style={{ height: 150, backgroundColor: "white" }}>
         <h1>Placements 2022*</h1>
         <br />
@@ -153,18 +216,18 @@ function App() {
           <div class="column">
             <Counting
               start="0"
-              end="315"
+              end="500"
               heading="Placed Students"
               suffix="+"
             />
           </div>
           <div class="column">
-            <Counting start="0" end="600" heading="No of offers" suffix="+" />
+            <Counting start="0" end="780" heading="No of offers" suffix="+" />
           </div>
           <div class="column">
             <Counting
               start="0"
-              end="25"
+              end="24"
               heading="Highest package"
               suffix="LPA"
             />
@@ -181,7 +244,7 @@ function App() {
           <br />
           <br />
           <div className="mycard">
-            <h1>Branch Wise Placement Statistics of BIT in 2022*</h1>
+            <h1>Year Wise Placement Statistics of BIT in 2022*</h1>
           </div>
 
           <br />
@@ -196,11 +259,9 @@ function App() {
       <Table2 />
       <br />
       <br />
-
       <br />
       <br />
       <h1>Training and Placement Cell</h1>
-
       <div class="row1">
         <div class="column1">
           <p style={{ textAlign: "left", fontWeight: "bold" }}>
@@ -232,7 +293,11 @@ function App() {
         </div>
       </div>
       <br />
-      <MyCaro />
+      {!mobileView && <MyCaro />}
+      {/* console.log(mobileView); */}
+      {mobileView && <MyCaroPhone />}
+      {/* <MyCaro /> */}
+
       <div class="row1">
         <div class="column1 card">
           <h2>VISION</h2>
@@ -267,7 +332,10 @@ function App() {
           </p>
         </div>
       </div>
-      <MyCaro />
+      {!mobileView && <MyCaro />}
+      {/* console.log(mobileView); */}
+      {mobileView && <MyCaroPhone />}
+      {/* <MyCaro /> */}
       <br />
       <h1>OBJECTIVE OF TRAINING AND PLACEMENT CENTRE</h1>
       <div class="card" style={{ backgroundColor: "wheat" }}>
@@ -359,12 +427,14 @@ function App() {
       </div>
       <br />
       <br />
-
       <h1>OUR RECRUITERS</h1>
       <br />
       <br />
       <div id="recruiters">
-        <MyCaro2 />
+        {!mobileView && <MyCaro2 />}
+        {/* console.log(mobileView); */}
+        {mobileView && <MyCaro2Phone />}
+        {/* <MyCaro2 /> */}
       </div>
       <br />
       <br />
@@ -379,14 +449,18 @@ function App() {
       <h1>FACILITY</h1>
       <br />
       <br />
+      {/* <div id="facility">
+        <Move /> */}
       <div id="facility">
-        <Move />
+        {!mobileView && <Move />}
+        {/* console.log(mobileView); */}
+        {mobileView && <MovePhone />}
       </div>
       <br />
       <br />
       <br />
       <br />
-      <div id="pteam"></div>
+
       <h1>PLACEMENT TEAM</h1>
       <br />
       <br />

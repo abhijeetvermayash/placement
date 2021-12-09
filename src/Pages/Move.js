@@ -56,42 +56,42 @@ export default class Move extends Component {
         <center>
           <Slider {...settings}>
             <div>
-              <img style={{}} src={image4} />
+              <img src={image4} />
             </div>
 
             <div>
               <div>
-                <img style={{}} src={image2} />
+                <img src={image2} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image3} />
+                <img src={image3} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image4} />
+                <img src={image4} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image5} />
+                <img src={image5} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image6} />
+                <img src={image6} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image7} />
+                <img src={image7} />
               </div>
             </div>
             <div>
               <div>
-                <img style={{}} src={image8} />
+                <img src={image8} />
               </div>
             </div>
           </Slider>

@@ -19,7 +19,7 @@ class Sstaff extends React.Component {
             </figcaption>
           </figure>
         </div>
-        <div class="card2">
+        {/* <div class="card2">
           <figure class="item2">
             <img class="img2" src={image2} />
             <figcaption style={{ color: "black" }} class="caption">
@@ -28,7 +28,7 @@ class Sstaff extends React.Component {
               </h3>
             </figcaption>
           </figure>
-        </div>
+        </div> */}
         <div class="card2">
           <figure class="item2">
             <img class="img2" src={image3} />
